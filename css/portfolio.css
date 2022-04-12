@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600&family=Roboto:wght@300;400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Playfair+Display:ital,wght@1,400;1,500;1,600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --clr-primary-200: #f3eed9;
+  --clr-primary-400: #824936;
+  --clr-neutral-900: #222c2a;
+  --clr-neutral-100: #fff;
+  --ff-primary: 'Monserrat', 'Roboto', sans-serif;
+  --ff-accent: 'Playfair Display', serif;
+  --clr-primario-vic: #099268;
+  --clr-primario-hover-vic: #12b886;
+}
+body {
+  background-color: var(--clr-neutral-100);
+  font-family: var(--ff-primary);
+  letter-spacing: 1.8px;
+  font-size: 1.08rem;
+  font-weight: 300;
+}
+
+/*************ARTICLE TO STRECTH THE WEB PAGE********/
+
+article {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/*************ARTICLE TO STRECTH THE WEB PAGE********/
+
+/**************HEADER*******************/
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* margin-right: 30px; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-top: 15px;
+}
+header nav {
+  display: flex;
+  gap: 40px;
+  /* margin-right: 20px; */
+  padding: 10px;
+}
+header nav a {
+  text-decoration: none;
+  color: var(--clr-neutral-100);
+  background: var(--clr-primario-vic);
+  padding: 0.5em;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+header nav a:hover {
+  background: var(--clr-primario-hover-vic);
+}
+header img {
+  border-radius: 50%;
+}
+h1 {
+}
+/* .wrapper {
+  position: relative;
+} */
+
+/*************SECTION PROJECTS***************/
+article > .title-h2 {
+  text-align: center;
+}
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  padding: 2px 16px;
+  flex-wrap: wrap;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 40%;
+  padding: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 var(--clr-primario-hover-vic);
+}
+.card img {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+}
+
+/**************INTRO*************/
+.title-h1 {
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  font-family: var(--ff-accent);
+  font-size: 2rem;
+  letter-spacing: 1.5rem;
+  margin-bottom: 6rem;
+}
+.title-h1::first-letter {
+  color: var(--clr-primario-vic);
+  font-size: 3.5rem;
+  text-decoration: underline;
+}
+
+#intro {
+  margin-top: 1rem;
+  /*padding-top: 90px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#intro h1 {
+  margin-bottom: 1em;
+}
+span.heart {
+  color: red;
+}
+/******Transition********/
+#intro span {
+  transition: font-size 0.6s ease;
+}
+
+#intro span:hover {
+  /* font-size: 2rem; */
+  background: #f56d91;
+  /* transition: width 2s, height 4s; */
+  font-size: 1.5em;
+  border-radius: 15px;
+  padding: 4px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+#email {
+  padding: 0.5em;
+}
+#submit {
+  border: none;
+  margin-top: 10px;
+  text-transform: uppercase;
+  padding: 10px 0;
+  border-radius: 15px;
+  font-weight: 300;
+  cursor: pointer;
+  margin-bottom: 60px;
+  background: var(--clr-primario-vic);
+  color: #fff;
+  letter-spacing: 0.9px;
+}
+
+/*******SECTION WHY TRUST WITH ME******************/
+.table-post {
+  display: flex;
+  gap: 1.2em;
+  align-items: center;
+}
+.table li {
+  margin-bottom: 2em;
+}
+
+/********SECTION SHOW MY WORK**********************/
+#show-work {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title-h2 {
+  font-family: var(--ff-accent);
+  margin-bottom: 2em;
+  letter-spacing: 0.7rem;
+  font-size: 1.8rem;
+}
+.title-h2 span {
+  color: var(--clr-primario-vic);
+}
+.title-h2 span:hover {
+  color: palevioletred;
+  width: 3rem;
+}
+
+#show-work-title {
+  margin-bottom: 20px;
+}
+
+/*********COLOR***********/
+
+.color-list{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  
+}
+ul{
+  list-style:none;
+}
+
+.colorgame {
+  margin-bottom: 3rem;
+} 
+.light {
+  background: #e4e9be;
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 20px;
+  color: black
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.dark {
+  background: #dddddd;
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 20px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.darker {
+  background: #525e75;
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 20px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.light:hover{
+  transition: padding 0.6s ease;
+  padding: 1.4rem;
+}
+.dark:hover{
+  transition: padding 0.6s ease;
+  padding: 1.4rem;
+}
+
+.darker:hover{
+  transition: padding 0.6s ease;
+  padding: 1.4rem;
+}
+
+.p-color{
+  text-align:center;
+  font-size: 1.5rem;
+  font-family: var(--ff-accent);
+
+}
+
+
+/***********IFRAME************/
+iframe {
+  margin-bottom: 3rem;
+}
+
+/********MY RATES*********************/
+#rates {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  gap: 40px;
+}
+.rates-price {
+  /* border: 1px dotted black; */
+  text-align: center;
+  box-shadow: 0px 2px 16px #999;
+  padding: 15px;
+  border-radius: 15px;
+}
+.rates-price:hover {
+  background: var(--clr-primario-hover-vic);
+}
+
+/* CON EL SELECTOR NTH-CHILD(NUMBER) COGEMOS EL ELEMENTO QUE LE INDIQUEMOS, EN ESTE CASO LA SEGUNDA TARJETA*****/
+.rates-price:nth-child(2):hover {
+  background: lightyellow;
+}
+
+.rates-price h3 {
+  margin-top: 0;
+  padding: 5px;
+  background-color: var(--clr-primario-vic);
+  margin-bottom: 15px;
+  display: block;
+}
+.service-price {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 15px;
+  background: var(--clr-neutral-100);
+  margin: 10px;
+  font-weight: bold;
+}
+/************FOOTER********************/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 40px;
+  border: 2px dotted black;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  margin-top: 2rem;
+}
+footer nav {
+  display: flex;
+  gap: 15px;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+/*************MEDIA QUERY***********/
+@media (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.8em;
+  }
+  h1 {
+    text-align: center;
+    padding-top:3.50rem;
+  }
+  .table-post {
+    flex-direction: column;
+    text-align: center;
+  }
+  #rates {
+    flex-direction: column;
+    margin: 10px;
+  }
+  .table-bio {
+    flex-direction: column;
+  }
+  .table-bio img {
+    width: 50%;
+  }
+  h2{
+    text-align: center;
+  }
+}
